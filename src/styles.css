@@ -1,0 +1,89 @@
+
+:root{
+  --bg:#f7f8fb;
+  --panel:#ffffff;
+  --text:#0f172a;
+  --muted:#64748b;
+  --line:#e2e8f0;
+  --blue:#2563eb;
+  --blue-dark:#1e3a8a;
+  --soft:#eff6ff;
+}
+*{box-sizing:border-box}
+html,body,#root{margin:0;min-height:100%;font-family:"Malgun Gothic","Apple SD Gothic Neo",sans-serif;background:var(--bg);color:var(--text)}
+button,input,select{font:inherit}
+.app-shell{min-height:100vh;background:linear-gradient(180deg,#f8fafc,#eef2ff)}
+.page-wrap{max-width:1280px;margin:0 auto;padding:28px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:28px;box-shadow:0 10px 30px rgba(15,23,42,.06);padding:24px}
+.hero-panel h2{font-size:2rem;margin:8px 0 10px}
+.hero-panel p,.muted{color:var(--muted);line-height:1.7}
+.header-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:18px;margin-bottom:22px}
+.eyebrow{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.95rem}
+.panel-title{display:flex;align-items:center;gap:8px;font-weight:800;font-size:1.2rem;margin-bottom:10px}
+.text-input{width:100%;border:1px solid var(--line);border-radius:16px;padding:14px 16px;background:#fff;margin-bottom:12px}
+.progress-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #f1f5f9}
+.tabbar{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;background:#fff;padding:8px;border:1px solid var(--line);border-radius:22px;box-shadow:0 4px 20px rgba(15,23,42,.04);margin-bottom:20px}
+.tab{border:none;background:transparent;padding:14px 10px;border-radius:16px;font-weight:700;color:#475569;cursor:pointer}
+.tab.active{background:#0f172a;color:#fff}
+.stack{display:flex;flex-direction:column;gap:18px}
+.question-stack{display:flex;flex-direction:column;gap:14px;margin-top:14px}
+.question-card{border:1px solid var(--line);border-radius:22px;padding:16px}
+.question-head{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px}
+.badge{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:34px;border-radius:999px;background:#0f172a;color:#fff;font-weight:700}
+.question-cat{font-size:.8rem;color:var(--muted);margin-bottom:4px}
+.question-text{line-height:1.6}
+.scale-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.scale{border:1px solid var(--line);background:#fff;border-radius:16px;padding:12px 8px;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer}
+.scale span{font-size:.78rem;color:#64748b;line-height:1.2;text-align:center}
+.scale.active{background:#0f172a;color:#fff;border-color:#0f172a}
+.scale.active span{color:#e2e8f0}
+.results-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.ranking-list{display:flex;flex-direction:column;gap:14px;margin-top:14px}
+.rank-card{border:1px solid var(--line);border-radius:24px;padding:18px;background:#fff}
+.rank-card.top{background:#0f172a;color:#fff;border-color:#0f172a}
+.rank-topline{display:flex;justify-content:space-between;gap:12px}
+.small{font-size:.88rem;opacity:.82}
+.rank-name{font-size:1.8rem;font-weight:800;margin:2px 0}
+.percent-box{text-align:right}
+.percent{font-size:2.1rem;font-weight:800}
+.rank-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.info-box,.success-box,.fail-box{border-radius:18px;padding:12px;line-height:1.6}
+.info-box{background:rgba(148,163,184,.12)}
+.success-box{background:rgba(16,185,129,.12)}
+.fail-box{background:rgba(244,63,94,.12)}
+.chart-stack{display:flex;flex-direction:column;gap:18px}
+.chart-panel .chart-box{height:320px;margin-top:6px}
+.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.line-list{display:flex;flex-direction:column;gap:10px;line-height:1.8;color:#334155;margin-top:10px}
+.inline-icon{vertical-align:-3px;margin-right:6px}
+.contact-footer{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;margin-top:18px}
+.contact-card{display:inline-flex;align-items:center;gap:8px;background:#eff6ff;color:#1e3a8a;border-radius:16px;padding:12px 14px;font-weight:700}
+.action-row{display:flex;gap:10px;flex-wrap:wrap}
+.primary-btn,.secondary-btn,.ghost-btn{border:none;border-radius:18px;padding:14px 20px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.primary-btn{background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff;box-shadow:0 10px 24px rgba(37,99,235,.25)}
+.secondary-btn{background:#fff;border:1px solid var(--line);color:#0f172a}
+.ghost-btn{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.24);color:#fff}
+.intro-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px;position:relative;overflow:hidden;background:
+ radial-gradient(circle at 50% 15%, rgba(255,255,255,.18), transparent 32%),
+ linear-gradient(135deg, #050816 0%, #0b1633 45%, #12214f 100%)}
+.intro-glow{position:absolute;inset:0;background:
+ radial-gradient(circle at center, rgba(255,255,255,.12), transparent 48%),
+ linear-gradient(180deg, transparent, rgba(255,255,255,.04))}
+.intro-card{position:relative;max-width:920px;text-align:center;color:#fff;padding:34px 28px;border-radius:32px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(10px);box-shadow:0 24px 80px rgba(0,0,0,.28)}
+.intro-pill{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);font-size:.82rem;letter-spacing:.22em;color:rgba(255,255,255,.84);margin-bottom:18px}
+.intro-title{white-space:pre-line;font-size:clamp(2rem,6vw,4.9rem);line-height:1.12;margin:0 0 16px;font-weight:900}
+.intro-text{max-width:760px;margin:0 auto;color:rgba(255,255,255,.82);font-size:clamp(.98rem,2vw,1.15rem);line-height:1.8}
+.intro-contact{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:11px 16px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);font-weight:700}
+.intro-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+.intro-btn{padding:16px 22px}
+.intro-footer{margin-top:16px;font-size:.78rem;letter-spacing:.2em;color:rgba(255,255,255,.55)}
+@media (max-width: 980px){
+  .header-grid,.results-grid,.method-grid{grid-template-columns:1fr}
+}
+@media (max-width: 720px){
+  .page-wrap{padding:16px}
+  .panel{padding:18px}
+  .scale-grid{grid-template-columns:repeat(2,1fr)}
+  .rank-grid{grid-template-columns:1fr}
+  .tabbar{grid-template-columns:1fr}
+}
