@@ -1,18 +1,19 @@
-# 쎈수학지족학원 중3 고등학교 성향 적합도 진단
+# highschool-fit-checker-v4-clean
 
-Vite + React 기반 배포용 프로젝트입니다.
+## 매우 중요
+기존 저장소에 아래 파일이 남아 있으면 같은 오류가 다시 납니다.
 
-## 이번 수정 내용
-- Tailwind / PostCSS 제거
-- shadcn 의존성 제거
-- 순수 React + CSS 구조로 변경
-- 첫 화면 제목 수정
-- 전화번호 042-825-1296 첫 화면 / 마지막 화면 반영
-- Web Audio 기반 배경음악 토글 기능 추가
+- postcss.config.js
+- tailwind.config.js
+- components.json
+- 예전 src 폴더 파일들
 
-## 실행
-npm install
-npm run dev
+## 가장 안전한 방법
+1. GitHub 저장소에 들어갑니다.
+2. 기존 파일들을 먼저 삭제합니다. 특히 postcss.config.js, tailwind.config.js 꼭 지웁니다.
+3. 이 압축파일을 풉니다.
+4. 압축 푼 폴더 안의 파일만 새로 업로드합니다.
+5. Commit changes 합니다.
+6. Vercel에서 Redeploy 합니다.
 
-## 빌드
-npm run build
+이 버전은 Tailwind 없이 React + CSS만 사용합니다.
